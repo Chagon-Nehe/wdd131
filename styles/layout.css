@@ -1,0 +1,151 @@
+:root{
+    --black: #000;
+    --white: #fff;
+    --primary-color: #2A2418;
+    --secondary-color: #D6D1DB;
+    --accent-color: #1F086D;
+    --font-family: 'Arial', sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    margin: 0;
+    padding: 0;
+   
+   
+
+}
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 1rem;
+    text-align: center;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: var(--accent-color);
+    color: var(--white);
+    padding: 1rem;
+    text-align: center;
+}
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    margin: 0 1rem;
+}
+nav ul {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    
+}
+nav a:hover {
+    color: var(--secondary-color);
+    text-decoration:var(--primary-color);
+}
+nav li {
+    margin: 0 1rem;
+    flex-wrap: wrap;
+    border: var(--accent-color) 1px solid;
+    background-color: var(--primary-color);
+    align-content: center;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+nav li:hover {
+    background-color: var(--accent-color);
+    
+}
+p {
+    justify-content: center;
+    text-align: center;
+    margin: 0.5rem 0;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+    background-color: var(--primary-color);
+    font-size: 2rem;
+    border: var(--primary-color) 2px solid;
+    border-radius: 0.4rem;
+    padding: 0.5rem 10rem;
+    color: var(--white);
+    
+}
+h2{
+    display: flex;
+    justify-content: center;
+    border: 2px solid var(--primary-color);
+    background-color: var(--secondary-color);
+    border-radius: 0.5rem;
+    align-items: center;
+    text-align: center;
+}
+main {
+    
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    background-color: var(--white);
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    align-content: center;
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.card img {
+    display: flex;
+    max-width: 15rem;
+    align-content: flex-end;
+    height: auto;
+    border-radius: 8px;
+    
+}
+.about-me{
+    display: flex;
+    flex-direction: row;
+}
+section li:hover{
+    text-decoration: underline;
+    color: var(--primary-color);
+}
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+   
+}
+footer a img{
+    color: var(--secondary-color);
+    text-decoration:none;
+    width: 1.2rem;
+    height: 1.2rem;
+    align-content: center;
+    vertical-align: middle;
+    margin: 0 0.5rem;
+}
