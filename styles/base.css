@@ -45,10 +45,10 @@ nav ul {
     display: flex;
     flex: 1;
     justify-content: space-evenly;
-    list-style: none;
+    list-style:disc;
     padding: 10px;
     margin: 0;
-    display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     
 }
