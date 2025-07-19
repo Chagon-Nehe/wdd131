@@ -36,6 +36,7 @@ button.addEventListener('click', () => {
         // Add an event listener to the delete button to remove the list item when clicked
         deleteButton.addEventListener('click', () => {
             ulList.removeChild(addList);
+            input.focus(); // Focus back on the input field after deletion
         });
 
         input.value = ''; // Clear the input field after adding the item
