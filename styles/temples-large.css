@@ -23,7 +23,7 @@
     header {
         display: flex;
         flex-direction: row;
-        justify-content: space-around; 
+        justify-content: space-between; 
     }
     .navigation{
         flex: 1 1 100%;
@@ -41,7 +41,7 @@
         
     }
     img {
-        width: 15rem;
+        width: 16rem;
         height: auto;
         border-radius: 0.5rem;
     }
