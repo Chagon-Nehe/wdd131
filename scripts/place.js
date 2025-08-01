@@ -27,7 +27,7 @@ const mydescription = document.querySelector("#condition");
 const myTemp = document.querySelector("#temperature");
 const wind   = document.querySelector('#wind')
 
-
+const windChill =calculateWindChill(myTemp, wind);
 
 //decraring my variables
 const lat =  "-13.954520692818173"
@@ -60,6 +60,7 @@ function displayResults(data){
     wind.textContent =data.wind.speed + `km/h`;
     
    
+  
     
   
 }    
@@ -68,11 +69,11 @@ apiFetch();
 function calculateWindChill(myTemp, wind){
     //Calculate wind chill
     //const windChill = document.querySelector('wind-chill') 
-    // Wind chill is only defined for temperatures 10°C (50°F) or below
+  //Wind chill is only defined for temperatures 10°C (50°F) or below
   // and wind speeds above 4.8 km/h (3 mph).
-   // if (myTemp > 10 || wind<= 4.8) {
-   // return "Wind chill is not applicable for these conditions. The actual temperature feels like the wind chill.";
-    //}
+   if (myTemp > 10 || wind<= 4.8) {
+   return "N/A.";
+  }
     const windChill = 13.12 +
     0.6215 * myTemp - 11.37 *
     Math.pow(wind, 0.16) +
@@ -82,5 +83,4 @@ function calculateWindChill(myTemp, wind){
    
 }
 
-const windChillC = calculateWindChill(myTemp, wind);
-document.querySelector('#wind-chill').innerHTML = `${windChillC}`; 
+document.querySelector('#wind-chill').innerHTML = `${windChill}`

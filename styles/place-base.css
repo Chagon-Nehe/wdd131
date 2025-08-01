@@ -51,7 +51,11 @@ h2 #weather{
     font-weight: 700;
     align-items: center;
 }
-@media screen and (min-width:500px){ 
+.weather img {
+    width: 6rem;
+    height: auto;
+}
+@media screen and (min-width:600px){ 
     .hero {
         display: flex;
         width: 100%;
@@ -96,6 +100,9 @@ h2 #weather{
     h2 #weather{
     display: inline;
     width: 1rem;
+    }
+    .weather img {
+        display: none;
     }
 }
 .before::before {
