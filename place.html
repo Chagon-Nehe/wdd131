@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COUNTRY: MALAWI</title>
+    <meta name="description" content="A country: The Warm heart of Africa">
+    <meta name="author" content="Chawanangwa Gondwe">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place-base.css">
+    <script src="scripts/place.js"   defer></script>
+    <script src="scripts/getdates.js" defer></script>
+
+
+</head>
+<body>
+    <header>
+        <h1>MALAWI</h1>
+    </header>
+    <main class="container">
+        <div class="hero" id="hero-section">
+            <picture >
+                <source srcset="images/malawi-large.webp"  media="(min-width: 1000px)">
+                <source srcset="images/malawi-medium.webp" media="(min-width: 500px)">
+                <img src="images/malawi-small.webp"  alt="Lake Malawi" width="1200px" height="600px">
+                
+            </picture>
+
+            <div class="data">
+                <h2>Data</h2>
+                <ul >
+                    <p><span class="label" > Area: </span> <span id="area"></span></p>
+                    <p><span class="label"> Population: </span> <span id="population"></span></p>
+                    <p><span class="label"> Capital: </span> <span id="capital"></span></p>
+                    <p><span class="label"> Language: </span> <span id="language"></span></p>
+                    <p><span class="label"> Time Zone: </span> <span id="time-zone"></span></p>
+                    <p><span class="label"> Currency: </span> <span id="currency"></span></p>
+                    <p><span class="label"> Calling Code: </span> <span id="calling-code"></span></p>
+                    <p><span class="label"> Internet TLD: </span> <span id="internet-tld"></span></p>
+                </ul>
+            </div>
+
+            <div class="weather">
+                <h2>Weather <span id="weather"></span></h2>
+                <
+                <p><span class="label"> Temperature: </span> <span id="temperature"></span></p>
+                <p><span class="label"> Conditions: </span> <span id="condition"></span></p>
+                <p><span class="label"> Wind: </span> <span id="wind"></span></p>
+                <p><span class="label"> Wind Chill: </span> <span id="wind-chill"></span></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p >&copy; <span id="current-year" ></span> <span class="before after"> Chawanangwa Gondwe </span>     Malawi</p>
+        <p id="lastModified"></p>
+    </footer>
+    
+</body>
+</html>
