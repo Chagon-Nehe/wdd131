@@ -40,6 +40,9 @@ header {
     background-color: rgb(185, 226, 226);
     
 }
+.weather p, img{
+    padding: 0 3rem;
+}
 h2 {
     background-color: var(--secondary-color);
 }
@@ -54,6 +57,7 @@ h2 #weather{
 .weather img {
     width: 6rem;
     height: auto;
+    
 }
 @media screen and (min-width:600px){ 
     .hero {
