@@ -23,11 +23,9 @@ weather.innerHTML= `<?xml version="1.0"?><svg viewBox="-250 100 1000 300" xmlns=
 
 
 //decraring weather variables
-const mydescription = document.querySelector("#condition");
-const myTemp = document.querySelector("#temperature");
-const wind   = document.querySelector('#wind')
 
-const windChill =calculateWindChill(myTemp, wind);
+
+
 
 //decraring my variables
 const lat =  "-13.954520692818173"
@@ -51,36 +49,52 @@ async function apiFetch() {
       console.log(error);
   }
 }
+   
+apiFetch();
+
 
 //declaring the function to display the results
 function displayResults(data){
-    
-    mydescription.textContent = data.weather[0].description;
-    myTemp.textContent = Math.round(data.main.temp) + "°C";
-    wind.textContent =data.wind.speed + `km/h`;
-    
-   
-  
-    
-  
-}    
-apiFetch();
 
-function calculateWindChill(myTemp, wind){
-    //Calculate wind chill
-    //const windChill = document.querySelector('wind-chill') 
+  const mydescription = document.querySelector("#condition");
+  const myTemp = document.querySelector("#temperature");
+  const wind   = document.querySelector('#wind')
+  const windChillElement= document.querySelector('#wind-chill')
+    
+  mydescription.textContent = data.weather[0].description;
+  myTemp.textContent = Math.round(data.main.temp) + "°C";
+  wind.textContent =data.wind.speed + `km/h`;
+
+  const tempV = data.main.temp;
+  const windS = data.wind.speed;
+  console.log (`${tempV}`)
+  console.log (`${windS}`)
+  function calculateWindChill(tempV, windS){
+  //Calculate wind chill
   //Wind chill is only defined for temperatures 10°C (50°F) or below
   // and wind speeds above 4.8 km/h (3 mph).
-   if (myTemp > 10 || wind<= 4.8) {
-   return "N/A.";
+  if (tempV > 10 || windS<= 4.8) {
+  return `N/A.`;
   }
-    const windChill = 13.12 +
-    0.6215 * myTemp - 11.37 *
-    Math.pow(wind, 0.16) +
-    0.3965 * myTemp * Math.pow(wind ,0.16);
+  let windChill = 13.12 +
+  0.6215 * tempV - 11.37 *
+  Math.pow(wind, 0.16) +
+  0.3965 * tempV * Math.pow(windS ,0.16);
 
-   return parseFloat(windChill.toFixed(2)); // Round to 2 decimal places
+  return parseFloat(windChill.toFixed(2)); // Round to 2 decimal places
    
-}
+  }
 
-document.querySelector('#wind-chill').innerHTML = `${windChill}`
+  const calculatedWindChill = calculateWindChill(tempV, windS);
+    
+   
+
+    // Check if the element exists before trying to update it
+  if (windChillElement) {
+      // Update the text content with the calculated value
+    windChillElement.textContent = `${calculatedWindChill}`;
+  } else {
+    console.error('Error: Could not find the HTML element with id="wind-chill"');
+  }
+
+}
