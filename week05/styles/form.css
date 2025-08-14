@@ -87,7 +87,7 @@ textarea {
 
 .rating-container label {
     font-size: 2rem;
-    color: #e6e6e6; /* Gray stars */
+    color: #272613; /* Gray stars */
     transition: color 0.3s;
     cursor: pointer;
 }
@@ -95,7 +95,7 @@ textarea {
 .rating-container input[type="radio"]:checked ~ label,
 .rating-container label:hover,
 .rating-container label:hover ~ label {
-    color: #f39c12; /* Orange stars */
+    color: #f9b01e; /* Orange stars */
 }
 
 /* Checkbox Styling */
