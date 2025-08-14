@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutri-Health Quest</title>
+    <meta name="description" content="Daily tracker for family health and nutrition">
+    <meta name="author" content="Chawanangwa Gondwe">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/nutri-health.css">
+    <script src="scripts/tracker.js" defer></script>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container navbar-content">
+            <div class="navbar-logo">
+                <span style="font-size: 1.875rem;">🍎✨</span>
+                <h1 class="navbar-title">Nutri-Health Quest</h1>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="daily-tracker.html" class="nav-link active">Daily Tracker</a>
+                <a href="health-tips.html" class="nav-link">Health Tips</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <!-- Daily Tracker Page -->
+        <section id="tracker" class="page-section active">
+            <h2 class="tracker-page-title">Daily Health Tracker 📈</h2>
+            <div class="tracker-container">
+                <div class="tracker-grid">
+                    <!-- Tracker Items -->
+                    <div class="tracker-item" data-goal="8" data-metric="cups" data-name="Water">
+                        <h3 class="tracker-item-header">
+                            <span><span class="icon">💧</span> Cups of Water</span>
+                            <span class="value"><span class="current-value">0</span> / 8</span>
+                        </h3>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 0%;"></div>
+                        </div>
+                        <div class="tracker-buttons">
+                            <button class="count-button" data-action="decrease">-</button>
+                            <button class="count-button increase" data-action="increase">+</button>
+                        </div>
+                    </div>
+                    <div class="tracker-item" data-goal="5" data-metric="servings" data-name="Fruits & Veggies">
+                        <h3 class="tracker-item-header">
+                            <span><span class="icon">🍓</span> Servings of Fruits & Veggies</span>
+                            <span class="value"><span class="current-value">0</span> / 5</span>
+                        </h3>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 0%;"></div>
+                        </div>
+                        <div class="tracker-buttons">
+                            <button class="count-button" data-action="decrease">-</button>
+                            <button class="count-button increase" data-action="increase">+</button>
+                        </div>
+                    </div>
+                    <div class="tracker-item" data-goal="60" data-metric="minutes" data-name="Exercise">
+                        <h3 class="tracker-item-header">
+                            <span><span class="icon">🏃‍♂️</span> Minutes of Exercise</span>
+                            <span class="value"><span class="current-value">0</span> / 60</span>
+                        </h3>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 0%;"></div>
+                        </div>
+                        <div class="tracker-buttons">
+                            <button class="count-button" data-action="decrease">-</button>
+                            <button class="count-button increase" data-action="increase">+</button>
+                        </div>
+                    </div>
+                    <div class="tracker-item" data-goal="10" data-metric="hours" data-name="Sleep">
+                        <h3 class="tracker-item-header">
+                            <span><span class="icon">😴</span> Hours of Sleep</span>
+                            <span class="value"><span class="current-value">0</span> / 10</span>
+                        </h3>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 0%;"></div>
+                        </div>
+                        <div class="tracker-buttons">
+                            <button class="count-button" data-action="decrease">-</button>
+                            <button class="count-button increase" data-action="increase">+</button>
+                        </div>
+                    </div>
+                    <div class="tracker-item" data-goal="2" data-metric="times" data-name="Hygiene">
+                        <h3 class="tracker-item-header">
+                            <span><span class="icon">🧼</span> Brush Teeth</span>
+                            <span class="value"><span class="current-value">0</span> / 2</span>
+                        </h3>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 0%;"></div>
+                        </div>
+                        <div class="tracker-buttons">
+                            <button class="count-button" data-action="decrease">-</button>
+                            <button class="count-button increase" data-action="increase">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tracker-footer">
+                    <p class="health-score">Your Daily Health Score: <span id="health-score" class="health-score-value">0</span></p>
+                    <button id="reset-button" class="reset-button">Reset Daily Count</button>
+                </div>
+
+                <div class="challenge-box">
+                    <h3 class="challenge-title">Weekly Challenge!</h3>
+                    <p class="challenge-description">This week, try to add a new fruit or veggie to your meals every day!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+   
+    <footer>
+        <p>
+             &copy; <span id="year"></span> Nutri-Health Quest. Chawanangwa Gondwe .Malawi. 
+            <a href="references.html">References</a>
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>

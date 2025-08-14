@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutri-Health Quest</title>
+    <meta name="description" content="contact page.">
+    <meta name="author" content="Chawanangwa Gondwe">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/nutri-health.css">
+    <script src="scripts/contact.js" defer></script>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container navbar-content">
+            <div class="navbar-logo">
+                <span style="font-size: 1.875rem;">🍎✨</span>
+                <h1 class="navbar-title">Nutri-Health Quest</h1>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="tracker.html" class="nav-link">Daily Tracker</a>
+                <a href="tips.html" class="nav-link">Health Tips</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section id="contact" class="page-section active">
+            <h2 class="tracker-page-title">Contact Us 📧</h2>
+            <div class="contact-form-container">
+                <form action="#" method="post" class="contact-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    
+    <footer>
+        <p>
+             &copy; <span id="year"></span> Nutri-Health Quest. Chawanangwa Gondwe .Malawi. 
+            <a href="references.html">References</a>
+        </p>
+    </footer>
+
+    
+</body>
+</html>

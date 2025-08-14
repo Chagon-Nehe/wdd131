@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutri-Health Quest</title>
+    <meta name="description" content=" A platform for family health and nutrition">
+    <meta name="author" content="Chawanangwa Gondwe">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/nutri-health.css">
+    <script src="scripts/index.js" defer></script>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container navbar-content">
+            <div class="navbar-logo">
+                <span style="font-size: 1.875rem;">🍎✨</span>
+                <h1 class="navbar-title">Nutri-Health Quest</h1>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="daily-tracker.html" class="nav-link">Daily Tracker</a>
+                <a href="health-tips.html" class="nav-link">Health Tips</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <!-- Home Page Content -->
+        <section id="home" class="page-section active">
+            <div class="hero-section">
+                <div class="hero-text">
+                    <h2 class="hero-title">
+                        Your Family's Health Adventure Starts Here!
+                    </h2>
+                    <p class="hero-description">
+                        Let's make healthy habits a fun and exciting quest together.
+                    </p>
+                </div>
+                <div class="hero-image-container">
+                    <!-- Lazy loading added to the image -->
+                    <img src="https://placehold.co/400x300/6EE7B7/ffffff?text=Health+Adventure" alt="Health Adventure" class="hero-image" loading="lazy">
+                </div>
+            </div>
+
+            <!-- Rotating Health Tips Section -->
+            <div class="rotating-tip-section">
+                <p class="rotating-tip-text">
+                    💡 Quick Health Tip: <span id="rotating-tip" class="rotating-tip-content"></span>
+                </p>
+            </div>
+
+            <!-- Quick Stats Section -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-icon">💧</span>
+                    <h3 class="stat-title">Water</h3>
+                    <p class="stat-description">Stay hydrated!</p>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-icon">🍓</span>
+                    <h3 class="stat-title">Fruits & Veggies</h3>
+                    <p class="stat-description">Eat a colorful plate!</p>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-icon">🤸‍♂️</span>
+                    <h3 class="stat-title">Exercise</h3>
+                    <p class="stat-description">Move your body!</p>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-icon">😴</span>
+                    <h3 class="stat-title">Sleep</h3>
+                    <p class="stat-description">Recharge your energy!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+    <footer>
+        <p>
+            &copy; <span id="year"></span> Nutri-Health Quest. Chawanangwa Gondwe .Malawi. 
+            <a href="references.html">References</a>
+            
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
