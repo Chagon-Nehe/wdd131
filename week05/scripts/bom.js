@@ -28,7 +28,7 @@ chapterArray.forEach(chapter => {
 //});
 // Add an event listener to the button to add a new list item when clicked
 button.addEventListener('click', () => {
-    if (input.value.trim() !== '') { // Check if the input value is not empty
+    if (input.value() !== '') { // Check if the input value is not empty
         displayList(input.value);
         chapterArray.push(input.value);
         setChapterList();
