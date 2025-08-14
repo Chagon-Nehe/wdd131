@@ -1,0 +1,137 @@
+/* Basic Reset and Typography */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Main Form Container */
+.review-form {
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.review-form h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.review-form p {
+    color: #7f8c8d;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+/* Field Grouping and Styling */
+.field-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #34495e;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #bdc3c7;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #2c3e50;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Radio Button Styling */
+.rating-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.rating-container input[type="radio"] {
+    display: none;
+}
+
+.rating-container label {
+    font-size: 2rem;
+    color: #e6e6e6; /* Gray stars */
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+.rating-container input[type="radio"]:checked ~ label,
+.rating-container label:hover,
+.rating-container label:hover ~ label {
+    color: #f39c12; /* Orange stars */
+}
+
+/* Checkbox Styling */
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+/* Submit Button Styling */
+input[type="submit"] {
+    display: block;
+    width: 100%;
+    background-color: #3498db;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #bdc3c7;
+    font-size: 0.9rem;
+}

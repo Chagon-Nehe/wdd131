@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name="description" content="Product review form for a company's product">
+    <meta name="author" content="Chawanangwa Gondwe">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <form id="review-form" class="review-form" action="review.html" method="get">
+        <header>
+            <h1>Product Review Form</h1>
+            <p>Please fill out the form below to submit your product review.</p>
+        </header>
+
+        <div class="product-field field-group">
+            <label for="product-name">Select Product:</label>
+            <!-- The select options will be populated by JavaScript -->
+            <select name="product" id="product-name" required>
+                <option value="" disabled selected>Select a product ...</option>
+            </select>
+        </div>
+        
+        <div class="rating-field field-group">
+            <label>Overall Rating:</label>
+            <div class="rating-container" id="rating">
+                <input type="radio" name="overall-rating" id="rating-1" value="1" required>
+                <label for="rating-1">&star;</label>
+                <input type="radio" name="overall-rating" id="rating-2" value="2">
+                <label for="rating-2">&star;</label>
+                <input type="radio" name="overall-rating" id="rating-3" value="3">
+                <label for="rating-3">&star;</label>
+                <input type="radio" name="overall-rating" id="rating-4" value="4">
+                <label for="rating-4">&star;</label>
+                <input type="radio" name="overall-rating" id="rating-5" value="5">
+                <label for="rating-5">&star;</label>
+            </div>
+        </div>
+        
+        <div class="date-field field-group">
+            <label for="installation-date">Date of Installation:</label>
+            <input type="date" id="installation-date" name="installation-date" required>
+        </div>
+
+        <div class="features-field field-group">
+            <label>Useful Features:</label>
+            <div class="checkbox-group">
+                <input type="checkbox" id="feature-1" name="useful-features" value="durability">
+                <label for="feature-1">Durability</label>
+                <input type="checkbox" id="feature-2" name="useful-features" value="ease-of-use">
+                <label for="feature-2">Ease of Use</label>
+                <input type="checkbox" id="feature-3" name="useful-features" value="performance">
+                <label for="feature-3">Performance</label>
+            </div>
+        </div>
+        
+        <div class="review-field field-group">
+            <label for="written-review">Written Review:</label>
+            <textarea id="written-review" name="written-review" rows="4" placeholder="Write your review here..."></textarea>
+        </div>
+        
+        <div class="name-field field-group">
+            <label for="user-name">Your Name:</label>
+            <input type="text" id="user-name" name="user-name" placeholder="Enter your name">
+        </div>
+        
+        <div class="submit-button-field field-group">
+            <input type="submit" value="Submit Review">
+        </div>
+    </form>
+    
+    <footer>
+        <p>&copy; 2024 Product Review. All rights reserved.</p>
+    </footer>
+
+    <!-- A hidden div to show the review count message, used for demonstration -->
+    <div id="review-count-message" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 20px; background-color: #4CAF50; color: white; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); z-index: 1000; text-align: center;">
+        <p id="message-text"></p>
+    </div>
+
+</body>
+</html>
