@@ -70,6 +70,7 @@ body {
     padding-bottom: 2rem;
 }
 
+
 /* --- Home Page Hero Section --- */
 .hero-section {
     background-color: #ffffff;
@@ -88,8 +89,10 @@ body {
         flex-direction: row;
         justify-content: space-between;
     }
+    #hamburger {
+        display: none;
+    }
 }
-
 .hero-text {
     text-align: center;
 }
