@@ -87,9 +87,13 @@ document.addEventListener('DOMContentLoaded', () => {
     // Run the function to populate the select list when the page loads
     populateProductList();
 
-    // A note on the localStorage implementation:
-    // The instructions specified that the counter should be incremented on the
-    // 'review.html' page after form submission. Since we are creating a single
-    // file for demonstration, this script intercepts the form submission and
-    // updates the counter here to simulate the behavior.
 });
+
+// Get the last modified date of the document
+const lastModifiedDate = document.lastModified;
+
+// Update the last modified date in the footer
+const lastModifiedSpan = document.getElementById('lastModified');
+if (lastModifiedSpan) {
+    lastModifiedSpan.textContent = `Last modified: ${lastModifiedDate}`;
+}
