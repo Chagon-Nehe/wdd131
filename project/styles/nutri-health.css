@@ -1,7 +1,7 @@
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #f0fdf4; /* A cheerful, light green background */
-    color: #1f2937; /* A dark gray for text */
+    background-color: #f0fdf4; 
+    color: #1f2937; 
     margin: 0;
     padding: 0;
 }
@@ -9,10 +9,10 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 1.5rem; /* 24px padding */
+    padding: 1.5rem; 
 }
 
-/* --- Navigation Bar --- */
+
 .navbar {
     background-color: #ffffff;
     position: sticky;
@@ -31,13 +31,13 @@ body {
 .navbar-logo {
     display: flex;
     align-items: center;
-    gap: 0.5rem; /* 8px space between elements */
+    gap: 0.5rem; 
 }
 
 .navbar-title {
-    font-size: 1.5rem; /* 24px */
+    font-size: 1.5rem; 
     font-weight: bold;
-    color: #10B981; /* Green color */
+    color: #10B981; 
 }
 
 .nav-links {
@@ -47,34 +47,34 @@ body {
 
 .nav-link {
     padding: 0.5rem 1rem;
-    color: #4B5563; /* Gray text */
+    color: #4B5563; 
     font-weight: 500;
     transition: color 0.3s ease-in-out;
     background-color: transparent;
     border: none;
     cursor: pointer;
-    border-radius: 9999px; /* For the active state */
+    border-radius: 9999px; 
 }
 
 .nav-link:hover {
-    color: #34D399; /* Lighter green on hover */
+    color: #34D399; 
 }
 
 .nav-link.active {
-    background-color: #D1FAE5; /* Light green background for active link */
-    color: #065F46; /* Dark green text for active link */
+    background-color: #D1FAE5; 
+    color: #065F46; 
 }
 
-/* --- Page Sections (for single-page navigation) --- */
+
 .page-section {
     padding-bottom: 2rem;
 }
 
 
-/* --- Home Page Hero Section --- */
+
 .hero-section {
     background-color: #ffffff;
-    border-radius: 1.5rem; /* 24px */
+    border-radius: 1.5rem; 
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
     padding: 2rem;
     margin-bottom: 2rem;
@@ -144,9 +144,9 @@ body {
     height: auto;
 }
 
-/* --- Rotating Tips Section --- */
+
 .rotating-tip-section {
-    background-color: #fef9c3; /* Light yellow background */
+    background-color: #fef9c3; 
     border-radius: 1.5rem;
     padding: 1.5rem;
     text-align: center;
@@ -172,7 +172,7 @@ body {
     100% { opacity: 0; }
 }
 
-/* --- Quick Stats Section --- */
+
 .stats-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -205,7 +205,7 @@ body {
 }
 
 .stat-icon {
-    font-size: 3rem; /* 48px */
+    font-size: 3rem; 
 }
 
 .stat-title {
@@ -218,7 +218,7 @@ body {
     color: #4B5563;
 }
 
-/* --- Daily Tracker Page --- */
+
 .tracker-page-title {
     font-size: 2.25rem;
     font-weight: bold;
@@ -228,7 +228,7 @@ body {
 }
 
 .tracker-container {
-    max-width: 48rem; /* 768px */
+    max-width: 48rem; 
     margin-left: auto;
     margin-right: auto;
     background-color: #ffffff;
@@ -286,7 +286,7 @@ body {
 }
 
 .count-button {
-    background-color: #E5E7EB; /* Gray background */
+    background-color: #E5E7EB; 
     color: #4B5563;
     font-weight: bold;
     padding: 0.25rem 0.75rem;
@@ -301,7 +301,7 @@ body {
 }
 
 .count-button.increase {
-    background-color: #34D399; /* Green background */
+    background-color: #34D399; 
     color: #ffffff;
 }
 
@@ -326,7 +326,7 @@ body {
 
 .reset-button {
     margin-top: 1rem;
-    background-color: #F87171; /* Red background */
+    background-color: #F87171; 
     color: #ffffff;
     font-weight: bold;
     padding: 0.5rem 1.5rem;
@@ -345,7 +345,7 @@ body {
 .challenge-box {
     margin-top: 2rem;
     padding: 1.5rem;
-    background-color: #DBEAFE; /* Light blue */
+    background-color: #DBEAFE;
     border-radius: 1.5rem;
     text-align: center;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
@@ -362,7 +362,7 @@ body {
     margin-top: 0.5rem;
 }
 
-/* --- Health Tips Page --- */
+
 .tips-page-title {
     font-size: 2.25rem;
     font-weight: bold;
@@ -464,7 +464,6 @@ body {
     font-weight: 500;
 }
 
-/* --- Celebration Modal --- */
 .celebration-modal {
     display: none;
     position: fixed;
@@ -523,7 +522,7 @@ body {
     transform: scale(1.05);
 }
 
-/* --- Form specific styling for contact.html --- */
+
 .contact-form-container {
     max-width: 48rem;
     margin: 0 auto;
@@ -574,7 +573,7 @@ body {
     background-color: #10B981;
 }
 
-/* --- Footer --- */
+
 footer {
     text-align: center;
     padding: 1.5rem;
